@@ -56,6 +56,7 @@ body{
   align-items: center;
   
 }
+/*Formtando a galeria*/
 .viaje-connosco{
   padding:30px;
   width: 500px;
@@ -114,4 +115,43 @@ body{
   height: 20px;
   background-color: rgb(11, 175, 240);
 }
-
+/*Formatando a section nosso jornal*/
+.nosso-jornal{
+  padding: 10px;
+flex-direction: column;
+display: flex;
+ background-color: rgb(151, 148, 148);
+ width: 1165px;
+ height: 873px;
+ margin:auto;
+}
+.nosso-jornal ul{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.nosso-jornal ul li{
+  padding: 3px;
+  width: 380px;
+  height: 380px;
+}
+.nosso-jornal ul li h3{
+  color: rgb(11, 175, 240);
+  text-align: center;
+  margin: 8px;
+}
+.nosso-jornal ul li span{
+  font-size: 1.25em;
+  align-content: center;
+  text-align: center;
+  color: aliceblue;
+}
+.nosso-jornal ul li p{
+  text-align: center;
+}
+.nosso-jornal h1{
+  text-align: center;
+  padding-bottom: 20px;
+}
