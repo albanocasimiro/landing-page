@@ -252,12 +252,14 @@ display: flex;
   background-position: center;
 }
 .travel ul{
-
+  list-style: none;
 }
 .travel li figure{
   position: relative;
 }
 .travel li figcaption{
+  margin: 5px;
+  max-width: 150px;
   top: 0px;
   position: absolute;
 }
