@@ -262,12 +262,13 @@ display: flex;
   position: relative;
 }
 .travel figcaption{
-  color: white;
+  color: rgb(3, 3, 3);
   width: 160px;
   padding:8px;
   margin: 6px;
   top: 120px;
   position: absolute;
+  font-weight: bold;
 }
 .travel figcaption{
   text-align: justify;
@@ -279,6 +280,7 @@ display: flex;
   text-align: center;
 }
 .extra{
+  background-color: rgba(0, 0, 0, 0.368);
   color: white;
   width: 180px;
   align-items: center;
@@ -288,4 +290,39 @@ display: flex;
   margin-top: -25px;
   margin-left:7px;
   /*position: absolute;*/
+}
+.extra span{
+  font-weight: bold;
+  font-size: 1.25em;
+}
+.extra p{
+  text-decoration: line-through;
+}
+
+.bg2{
+  margin-top: -190px;
+  max-width:1075px;
+ 
+}
+
+/*formatando a galeria*/
+.galeria{
+  margin: auto;
+  max-width: 1148px;
+  max-height: 767px;
+}
+.galeria h1{
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+.galeria ul{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  flex-grow: 5;
+}
+.galeria ul li{
+  margin: 10px;
 }
