@@ -424,6 +424,7 @@ footer {
 .contactos input {
   width: 290px;
   height: 40px;
+  margin: 5PX;
   padding: 5px;
   border-radius: 5px;
   border: none;
