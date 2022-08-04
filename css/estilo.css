@@ -3,36 +3,43 @@
   font-family: 'logo';
   src: url(../fonts/fonts.ttf);
 }
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
 }
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
- 
 }
 /*Formtando o cabecalho*/
-.cabecalho{
-
+.cabecalho {
   width: 100%;
   height: 550px;
   background-image: url('../img/fundo.png');
   background-position: center;
   background-size: cover;
 }
-.cabecalho h1{
-  margin:10px;
+.cabecalho .logo {
+  margin: 10px;
   font-size: 2em;
   font-family: 'logo';
 }
-.menu a{
+.cabecalho .logo {
+  color: grey;
+  text-decoration: none;
+}
+.menu .fl {
   margin: 10px;
   border: solid 3px rgb(11, 175, 240);
   color: rgb(11, 175, 240);
   padding: 20px;
   text-decoration: none;
 }
-.menu{
+.menu .fl:hover {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.menu {
   color: gray;
   justify-content: space-around;
   align-items: center;
@@ -40,36 +47,45 @@ body{
   background-color: rgba(192, 192, 192, 0.322);
   height: 70px;
   width: 100%;
-
 }
-.menu ul{
+.menu ul {
   display: flex;
   list-style: none;
 }
-.menu ul li{
+.menu ul li {
   cursor: pointer;
-  margin:10px;
+  margin: 10px;
 }
-.alinhar{
+.menu ul li a {
+  text-decoration: none;
+  color: grey;
+}
+.menu ul li a:hover {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(0, 217, 255);
+  padding: 10px;
+  font-weight: bold;
+}
+.alinhar {
   width: 100%;
   height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 /*Formtando a galeria*/
-.viaje-connosco{
-  padding:30px;
+.viaje-connosco {
+  padding: 30px;
   width: 500px;
   height: 170px;
-  border: 3px solid white; 
+  border: 3px solid white;
   color: white;
 }
-.viaje-connosco p{
-  margin-bottom:5px;
+.viaje-connosco p {
+  margin-bottom: 5px;
 }
-.viaje-connosco .now{
+.viaje-connosco .now {
   display: block;
   align-items: center;
   text-align: center;
@@ -78,36 +94,45 @@ body{
   height: 20px;
   background-color: rgb(11, 175, 240);
 }
-.viaje-connosco h1{
+.now {
+  text-decoration: none;
+  color: white;
+}
+.now:hover {
+  font-weight: bold;
+  background-color: rgba(29, 171, 214, 0.281);
+  color: white;
+  transition: 1s;
+}
+.viaje-connosco h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.sobre-nos{
+.sobre-nos {
   display: flex;
   background: url('../img/3.png') no-repeat;
   background-position: center;
   height: 661px;
 
   align-items: center;
-  
 }
-.sobre-nos img:nth-last-child(2){
+.sobre-nos img:nth-last-child(2) {
   position: absolute;
-  top:500px;
+  top: 500px;
   right: 20px;
 }
-.sobre-nos img:nth-last-child(1){
- position: absolute;
- right: 540px;
+.sobre-nos img:nth-last-child(1) {
+  position: absolute;
+  right: 540px;
 }
 
-.text{
+.text {
   margin-left: 100px;
   width: 300px;
   text-align: justify;
 }
 .text a {
-  color:white;
+  color: white;
   text-decoration: none;
   display: block;
   align-items: center;
@@ -118,49 +143,49 @@ body{
   background-color: rgb(11, 175, 240);
 }
 /*Formatando a section nosso jornal*/
-.nosso-jornal{
+.nosso-jornal {
   padding: 10px;
-flex-direction: column;
-display: flex;
- background-color: rgb(245, 240, 240);
- width: 1165px;
- height: 873px;
- margin:auto;
+  flex-direction: column;
+  display: flex;
+  background-color: rgb(245, 240, 240);
+  width: 1165px;
+  height: 873px;
+  margin: auto;
 }
-.nosso-jornal ul{
+.nosso-jornal ul {
   align-items: center;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
-.nosso-jornal ul li{
+.nosso-jornal ul li {
   padding: 3px;
   width: 380px;
   height: 380px;
 }
-.nosso-jornal ul li h3{
+.nosso-jornal ul li h3 {
   color: rgb(11, 175, 240);
   text-align: center;
   margin: 8px;
 }
-.nosso-jornal ul li span{
+.nosso-jornal ul li span {
   font-size: 1.25em;
   align-content: center;
   text-align: center;
   color: aliceblue;
 }
-.nosso-jornal ul li p{
+.nosso-jornal ul li p {
   text-align: center;
 }
-.nosso-jornal h1{
+.nosso-jornal h1 {
   text-align: center;
   padding-bottom: 20px;
 }
 
 /*Formatando a parte da oferta*/
 
-.oferta{
+.oferta {
   display: flex;
   width: 100%;
   height: 652px;
@@ -169,117 +194,112 @@ display: flex;
   background-size: cover;
   justify-content: center;
   align-items: center;
-  
 }
-.oferta h3{
+.oferta h3 {
   margin-bottom: 10px;
 }
-.oferta p{
+.oferta p {
   color: grey;
   margin-bottom: 10px;
 }
-.oferta input{
+.oferta input {
   padding: 5px;
   width: 322px;
   height: 54px;
   border: none;
 }
-.oferta button{
+.oferta button {
   cursor: pointer;
   width: 180px;
   height: 63px;
   color: white;
   font-weight: bold;
   text-decoration: none;
-  background:#36aeea;
+  background: #36aeea;
   border: none;
   border-radius: 5px;
 }
-.oferta span{
+.oferta span {
   color: #36aeea;
 }
-.segundo{
+.segundo {
   border-left: solid 2px rgb(143, 139, 139);
 }
-.agrupar{
+.agrupar {
   width: 852px;
 }
 /*FORMTANDO A PARTE "COMO TRABALHAMOS"*/
-.como-trabalhamos{
+.como-trabalhamos {
   max-width: 1075px;
   margin: auto;
   display: flex;
   flex-direction: column;
-
-  
 }
-.como-trabalhamos ul{
+.como-trabalhamos ul {
   display: flex;
   text-align: center;
- 
 }
-.como-trabalhamos span{
+.como-trabalhamos span {
   border: 3px solid #36aeea;
-  padding:10px;
+  padding: 10px;
   border-radius: 50px;
-  margin-bottom:100px;
+  margin-bottom: 100px;
 }
-.como-trabalhamos img{
+.como-trabalhamos img {
   padding: 30px;
   background-color: rgb(170, 168, 168);
   border-radius: 40px;
   margin-bottom: 10px;
 }
-.como-trabalhamos li{
+.como-trabalhamos li {
   list-style: none;
   margin: 40px;
 }
-.como-trabalhamos p{
+.como-trabalhamos p {
   margin-top: 5px;
 }
-.como-trabalhamos h1{
-  margin:40px 0px 40px 0px;
-  text-align:center;
+.como-trabalhamos h1 {
+  margin: 40px 0px 40px 0px;
+  text-align: center;
 }
 /* FORMATANDO A PARTE DOS PREÇARIOS*/
-.travel{
-  max-width:1075px ;
+.travel {
+  max-width: 1075px;
   height: 100%;
   margin: auto;
-  
 }
-.travel div{
+.travel div {
   display: flex;
 }
-.bg{
+.bg {
   width: 100%;
   background: url('../img/3.png') no-repeat;
   background-position: center;
 }
 
-.travel figure{
+.travel figure {
   margin: 10px;
   position: relative;
 }
-.travel figcaption{
+.travel figcaption {
   color: rgb(3, 3, 3);
   width: 160px;
-  padding:8px;
+  padding: 8px;
   margin: 6px;
   top: 120px;
   position: absolute;
   font-weight: bold;
 }
-.travel figcaption{
+.travel figcaption {
   text-align: justify;
 }
-.travel figcaption h3{
+.travel figcaption h3 {
   margin-bottom: 20px;
 }
-.travel h1{
+.travel h1 {
   text-align: center;
 }
-.extra{
+.extra {
   background-color: rgba(0, 0, 0, 0.368);
   color: white;
   width: 180px;
@@ -288,41 +308,142 @@ display: flex;
   justify-content: space-between;
   display: flex;
   margin-top: -25px;
-  margin-left:7px;
+  margin-left: 7px;
   /*position: absolute;*/
 }
-.extra span{
+.extra span {
   font-weight: bold;
   font-size: 1.25em;
 }
-.extra p{
+.extra p {
   text-decoration: line-through;
 }
 
-.bg2{
+.bg2 {
   margin-top: -190px;
-  width:100%;
- 
+  width: 100%;
 }
 
 /*formatando a galeria*/
-.galeria{
+.galeria {
   margin: auto;
   max-width: 1148px;
   max-height: 767px;
 }
-.galeria h1{
+.galeria h1 {
   font-weight: bold;
   margin-top: 10px;
   text-align: center;
 }
-.galeria ul{
+.galeria ul {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   flex-grow: 5;
 }
-.galeria ul li{
+.galeria ul li {
   margin: 10px;
+}
+/*estilizando a parte de logos dos parceiros*/
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+  height: 150px;
+  background-color: #f8f9fa;
+}
+/*estilizando a parte dos comentarios dos clientes*/
+.clientes {
+  max-width: 1148px;
+  max-height: 767px;
+  margin: auto;
+}
+.clientes h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+.clientes ul {
+  display: flex;
+  flex-flow: row-reverse;
+  list-style: none;
+}
+.clientes li {
+  margin: 20px;
+  max-width: 535px;
+  max-height: 250px;
+}
+.clientes li div {
+  display: flex;
+  align-items: center;
+}
+.clientes li p {
+  margin: 10px;
+}
+.clientes span {
+  font-size: 2em;
+  font-weight: bold;
+  color: grey;
+}
+.clientes p {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+/*formatando o rodape*/
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;
+  width: 100%;
+  height: 700px;
+  background-image: url('../img/bg3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.contactos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px;
+  width: 380px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.329);
+  color: white;
+}
+.contactos p {
+  font-weight: bold;
+  text-align: center;
+}
+.contactos h2 {
+  color: aqua;
+}
+.contactos input {
+  width: 290px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+.contactos a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(0, 217, 255);
+  width: 290px;
+  height: 40px;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  background-color: #3b5056;
 }
